@@ -40,12 +40,11 @@ input[type="text"], textarea {
 
 /* Terminal-like button */
 .btn-primary {
-    background-color: #6272a4; /* Slightly lighter background */
+    background-color: #000000; /* Slightly lighter background */
     border: none;
     color: #f8f8f2; /* Light text */
 }
 .btn-primary:a {
-    background-color: #6272a4; /* Slightly lighter background */
     border: none;
     color: #f8f8f2; /* Light text */
 }
