@@ -1,0 +1,23 @@
+#this is just kinda okay
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SemanticScholarBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+#Baiduspider
+User-agent: Baiduspider
+Disallow: /
+
+#Yandex
+User-agent: Yandex
+Disallow: /
+
+User-Agent: trendictionbot
+Disallow: /
+
+User-agent: *
+Crawl-delay: 10
