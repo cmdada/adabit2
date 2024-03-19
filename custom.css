@@ -6,6 +6,9 @@ body {
     color: #f8f8f2; /* Light text */
 }
 
+a {
+	color: #23FF91;
+}
 .navbar {
     background-color: #282a36; /* Darker background for navbar */
 }
@@ -41,7 +44,11 @@ input[type="text"], textarea {
     border: none;
     color: #f8f8f2; /* Light text */
 }
-
+.btn-primary:a {
+    background-color: #6272a4; /* Slightly lighter background */
+    border: none;
+    color: #f8f8f2; /* Light text */
+}
 .btn-primary:hover {
     background-color: #44475a; /* Darker background on hover */
 }
