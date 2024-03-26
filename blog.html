@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>adabit blog</title>
+
+    <link rel="canonical" href="https://adabit.org/blog/">
+	<link href="bootstrap.css" rel="stylesheet">  
+	<link href="custom.css" rel="stylesheet">  
+		
+
+    </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">adabit</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#projects">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contact">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<br>
+</br>
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Your iPhone is Killing the Planet</h1>
+      <p class="lead my-3">For longer than I’ve understood electronics, for longer than I’ve been alive, the worst kept secret of the electronics industry is electronic waste; the grungy, sharp-edged side...</p>
+      <p class="lead mb-0"><a href="https://sites.google.com/bvsd.org/2024investigativejournalism/period-8-10th-ala/sam-tessar" class="text-white fw-bold">Continue reading...</a></p>
+    </div>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">Evaluating the 2D Vector and Raster Graphics Processing Proficiency of CMU CS </h2>
+        <p class="blog-post-meta">Written August 2023, Published on: Fri Mar 1 09:16:46 AM MST 2024 by ada</p>
+		<h3 id="introduction">Introduction</h3>
+		<p>This article sets out to evaluate the computational capabilities of CMU Computer Science (CS) Academy's Integrated Development Environment (IDE) in processing 2D Vector and Raster Graphics.</p>
+		<h3 id="methodology">Methodology</h3>
+		<p>The evaluation framework centers on the continuous creation and rendering of 2D objects while closely observing the total count of objects effectively processed by the CMU CS Academy's IDE. The selection of test objects comprised vector shapes, along with raster text, that I found to fetch fonts from fonts.google.com based on network requests and debugging observations.</p>
+		<h3 id="evaluation-method">Evaluation Method</h3>
+		<p>Performance testing was carried out using a system equipped with a 12th generation Intel Core i7 processor, 16GB RAM, and an Nvidia T1000 with 4GB of GDDR6, running on Windows 10. The testing spans were deployed on Firefox and Google Chrome.</p>
+		<ul>
+		<li>Firefox demonstrated performance of an average count of 5,423 shapes before crash over ten runs, with each stress test lasting near five minutes before the page became unresponsive, prompting either the page to crash, the browser to crash, or the Windows desktop to crash.</li>
+		<li>The variability of the data on Chromium-based browsers shows that this test may not be optimal for Chromium-based browsers. For a performance log recorded via Firefox's built-in profiler, click <a href="http://go.poweredge.xyz/perf">here</a>.</li>
+		</ul>
+		<h3 id="some-assumptions-on-cmu-cs-academys-graphics-rendering">Some Assumptions on CMU CS Academy's Graphics Rendering</h3>
+		<p>CMU CS Academy leverages Brython, which is an implementation of Python 3 for the web, to execute code in a Python 3 environment and uses Ace Editor as the code editor. While Brython supports outputting to a display, specific JavaScript (JS) frameworks are required. However, due to CMU's use of Ace, it seems that none of these frameworks would be compatible. To solve this problem, they wrote a graphics library that renders directly to the webpage, but this library does not yet seem to be equipped to manage multiple shapes simultaneously. To handle the creation of shapes or text labels, an instance of their JS graphics library is spawned on-demand, creating massive inefficiency in memory and CPU usage.</p>
+		<p>Code available <a href="https://cmu.adas.software/cmu.pdf">here</a>.</p>
+		
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="fst-italic">about me</h4>
+          <p class="mb-0">radical free software user, electrical team lead on FRC 2036 black knights robotics, electrical/linux nerd, bad at explaining things. contact me through the applicable email listed in the contacts.</p>
+        </div>
+	 </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+  </body>
+</html>
