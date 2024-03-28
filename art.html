@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ada's art gallery">
+    <title>art</title>
+    <link rel="canonical" href="https://adabit.org/art/">
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+    <style>
+          .art-piece {
+            max-width: 95%; /* Set the maximum width for each art piece */
+          }
+    
+          .art-piece img {
+            max-width: 100%;
+            height: auto;
+          }
+        </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">adabit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="art.html">art</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<br></br>
+    <main class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <section id="art-gallery">
+            <h1 class="fst-italic">Art</h1>
+            <p>I do somewhat questionable pixel art.</p>
+            <div class="art-grid">
+              <div class="art-piece">
+                <img src="assets/noheart.png" alt="man in a skirt with no heart">
+                <h2 class="fst-italic">heartless</h2>
+                <p>a very high effort drawing you shouldnt read into</p>
+              </div>
+              <div class="art-piece">
+                <img src="assets/sinking.png" alt="bloody bathroom sink">
+                <h2 class="fst-italic">sinking</h2>
+                <p>just an idea i had while washing my hands</p>
+              </div>
+              <div class="art-piece">
+                <img src="assets/projectile_weapon.png" alt="girl with pink hair wearing headphones and holding a gun">
+                <h2 class="fst-italic">projectile weapon</h2>
+                <p>you starting to see a theme in the messed up stuff i draw?</p>
+              </div>
+              <div class="art-piece">
+                <img src="assets/holeinmyhead.png" alt="eerie head, mostly pastel pink and blue with a bloody spot">
+                <h2 class="fst-italic">hole in my head</h2>
+                <p>not related to the great LJG song of the same name</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="col-md-4">
+          <div class="position-sticky" style="top: 2rem;">
+            <div class="p-4 mb-3 bg-dark rounded">
+              <h4 class="fst-italic">about me</h4>
+              <p class="mb-0">radical free software user, electrical team lead on FRC 2036 black knights robotics, electrical/linux nerd, bad at explaining things. contact me through the applicable email listed in the contacts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer-component></footer-component>
+    <script src="jquery.js"></script>
+    <script src="bs.js"></script>
+  </body>
+</html>
