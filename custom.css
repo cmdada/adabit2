@@ -3,20 +3,32 @@
 body {
     font-family: monospace;
     background-color: #1e1e1e; /* Dark background */
-    color: #ff5ab7;;
+    color: #ff5ab7;
 }
 
 a {
-	color: #23FF91;
+    color: #23FF91;
+    transition: color 0.3s ease; /* Smooth color transition */
 }
+
+a:hover {
+    color: #ff5ab7; /* Change color on hover */
+}
+
 .navbar {
     background-color: #282a36; /* Darker background for navbar */
+    transition: background-color 0.3s ease; /* Smooth background transition */
 }
 
 .card {
     background-color: #282a36; /* Darker background for cards */
     color: #ff5ab7;
     border: 1px solid #44475a; /* Slightly lighter border */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background and color transition */
+}
+
+.card:hover {
+    background-color: #111111; 
 }
 
 .footer {
@@ -26,6 +38,7 @@ a {
     width: 100%;
     background-color: #282a36; /* Darker background for footer */
     color: #ff5ab7;
+    transition: background-color 0.3s ease; /* Smooth background transition */
 }
 
 /* Terminal-like input */
@@ -36,6 +49,11 @@ input[type="text"], textarea {
     outline: none;
     padding: 10px;
     font-family: 'Fira Code', monospace;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background and color transition */
+}
+
+input[type="text"]:hover, textarea:hover {
+    background-color: #282a36; /* Darker background on hover */
 }
 
 /* Terminal-like button */
@@ -43,11 +61,9 @@ input[type="text"], textarea {
     background-color: #000000; /* Slightly lighter background */
     border: none;
     color: #f8f8f2; /* Light text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background and color transition */
 }
-.btn-primary:a {
-    border: none;
-    color: #f8f8f2; /* Light text */
-}
+
 .btn-primary:hover {
     background-color: #44475a; /* Darker background on hover */
 }
