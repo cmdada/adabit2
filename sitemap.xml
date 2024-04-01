@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.adabit.org/index.html</loc>
+        <loc>https://www.adabit.org/</loc>
     </url>
     <url>
-        <loc>https://www.adabit.org/art.html</loc>
+        <loc>https://www.adabit.org/art</loc>
     </url>
     <url>
-        <loc>https://www.adabit.org/blog.html</loc>
+        <loc>https://www.adabit.org/blog</loc>
+    </url>
+    <url>
+        <loc>https://www.adabit.org/iphone</loc>
     </url>
     <url>
         <loc>https://www.adabit.org/humans.txt</loc>
