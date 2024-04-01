@@ -13,7 +13,9 @@ a {
 
 a:hover {
     color: #ff5ab7; /* Change color on hover */
+    transform: scale(1.03); /* Scale up on hover */
 }
+
 
 .navbar {
     background-color: #282a36; /* Darker background for navbar */
@@ -66,4 +68,5 @@ input[type="text"]:hover, textarea:hover {
 
 .btn-primary:hover {
     background-color: #44475a; /* Darker background on hover */
+    transform: translateY(-3px); /* Move up slightly on hover */
 }
