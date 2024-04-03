@@ -1,4 +1,11 @@
 /* custom.css */
+.art-piece {
+  max-width: 95%; /* Set the maximum width for each art piece */
+}
+.art-piece img {
+  max-width: 100%;
+  height: auto;
+}
 
 body {
     font-family: monospace;
