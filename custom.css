@@ -65,15 +65,15 @@ input[type="text"]:hover, textarea:hover {
 
 /* Terminal-like button */
 .btn-primary {
-    background-color: #000000; /* Slightly lighter background */
+    background-color: #1b1b1b; /* Slightly lighter background */
     border: none;
     color: #f8f8f2; /* Light text */
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background and color transition */
 }
 
 .btn-primary:hover {
-    background-color: #44475a; /* Darker background on hover */
-    transform: translateY(-3px); /* Move up slightly on hover */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add a shadow for depth */
+    background-color: #1f1f1f; /* Darker background on hover */
+    transform: translateY(-1px); /* Move up slightly on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Add a shadow for depth */
 
 }
