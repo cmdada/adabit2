@@ -17,6 +17,16 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+ const buttons = document.querySelectorAll('.btn-primary');
+ buttons.forEach(button => {
+    // Generate a random delay between 0 and 10 seconds
+    const delay = Math.random() * 3;
+    button.style.animation = `wiggle ${delay}s infinite`;
+ });
+});
+</script>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
