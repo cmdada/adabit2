@@ -7,6 +7,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		max-width: 100%
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -33,6 +34,7 @@
 	table {
 		border-collapse: collapse;
 		border-spacing: 0;
+		overflow: scroll;
 	}
 
 	body {
@@ -52,6 +54,7 @@
 	.container {
 		margin-left: auto;
 		margin-right: auto;
+		max-width: 100%;
 	}
 
 	.container.\31 25\25 {
