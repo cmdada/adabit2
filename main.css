@@ -2268,8 +2268,8 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #989898;
-		border-radius: 5px;
+		background-color: none;
+		border-radius: 0px;
 		border: 0;
 		color: #ffffff !important;
 		cursor: pointer;
@@ -3064,5 +3064,5 @@
 			.button {
 				padding: 0;
 			}
-
+		
 	}
