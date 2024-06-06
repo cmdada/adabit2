@@ -1571,13 +1571,15 @@
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: solid 1px #e4e4e4;
-		color: inherit;
+		border-bottom: transparent;
+		color: var(--color-fg);
 		text-decoration: none;
+		
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
+			text-decoration: none;
 			color: #ff5ab7 !important;
 		}
 
@@ -2483,6 +2485,7 @@
 
 			#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
 				  color: var(--color-fg);
+				    text-decoration: none;
 			}
 
 		#header header p {
