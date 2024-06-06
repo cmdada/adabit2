@@ -13,10 +13,21 @@
 <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body style="background-color: var(--color-bg);">
     <!-- Header -->
     <section id="header">
         <header>
+			<button style="font-size: 1rem;font-weight: bold;
+			  padding: 0.25rem 0.5rem;
+			  transition: all 2 ease-in-out;
+			  border-radius: 2rem;
+			  cursor: pointer;
+			  color: #ffffff;
+			  background-color: #ff5ab7;
+			  border: 0.25rem solid #ffffff;" type="button"
+    data-theme-toggle
+    aria-label="toggle dark theme">toggle dark theme</button>
+			  <br></br>
             <h1 id="logo"><a href="#">adabit.org</a> </h1>
         </header>
         <nav id="nav">
@@ -228,6 +239,7 @@
     <script src="util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="main.js"></script>
+    <script src="darktheme.js"></script>
     </div>
 </body>
 

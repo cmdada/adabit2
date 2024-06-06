@@ -1,5 +1,13 @@
-@import url("font-awesome.min.css");
-
+	[data-theme="light"] {
+	   --color-bg: #ffffff;
+	   --color-fg: #444444;
+	}
+	
+	[data-theme="dark"] {
+	   --color-bg: #1f1f1f;
+	   --color-fg: #ffffff;
+	}
+	
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -1545,11 +1553,13 @@
 /* Basic */
 
 	body {
-		background: #fff;
+		background: var(--color-bg);
+		background-color: var(--color-bg);
+
 	}
 
 	body, input, select, textarea {
-		color: #888;
+		color: var(--color-fg);
 		font-family: "Space Mono", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -1887,7 +1897,7 @@
 		input[type="radio"]:checked + label:before {
 			background: #989898;
 			border-color: #989898;
-			color: #ffffff;
+			color: var(--color-fg);
 			content: '\f00c';
 		}
 
@@ -2088,7 +2098,7 @@
 				ul.feature-icons li:before {
 					background: #ff5ab7;
 					border-radius: 100%;
-					color: #ffffff;
+					color: var(--color-fg);
 					display: block;
 					height: 2.5em;
 					left: 0;
@@ -2208,7 +2218,7 @@
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: #fafafa;
+				background-color: var(--color-bg);
 			}
 
 		table td {
@@ -2271,10 +2281,10 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: none;
 		border-radius: 0px;
 		border: 0;
-		color: #ffffff !important;
+		background-color: var(--color-bg);
+		   color: var(--color-fg); !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 700;
@@ -2291,7 +2301,7 @@
 		input[type="button"]:hover,
 		.button:hover {
 			background-color: #a5a5a5;
-			color: #ffffff !important;
+			color: var(--color-fg);
 		}
 
 		input[type="submit"]:active,
@@ -2374,7 +2384,7 @@
 		input[type="button"].special,
 		.button.special {
 			background-color: #ff5ab7;
-			color: #ffffff !important;
+			color: var(--color-fg);
 		}
 
 			input[type="submit"].special:hover,
@@ -2467,11 +2477,12 @@
 	}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			
+		    color: var(--color-fg);
 		}
 
 			#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
-				color: #ffffff;
+				  color: var(--color-fg);
 			}
 
 		#header header p {
@@ -2483,7 +2494,7 @@
 		}
 
 			#header a:hover {
-				color: #ffffff !important;
+				   color: var(--color-fg); !important;
 			}
 
 		#header > header {
@@ -2555,14 +2566,14 @@
 						-ms-transition: none;
 						transition: none;
 						border: 0;
-						color: #ffffff !important;
+						color: var(--color-fg); !important;
 						display: block;
 						padding: 0.85em 0;
 						text-decoration: none;
 					}
 
 						#header > nav ul li a.active {
-							background: #fff;
+							background: var(--color-bg);
 							color: #ff5ab7 !important;
 						}
 
@@ -2573,7 +2584,7 @@
 /* Wrapper */
 
 	#wrapper {
-		background: #fff;
+		background: var(--color-bg);
 		padding-right: 23em;
 	}
 
@@ -2594,7 +2605,7 @@
 /* Footer */
 
 	#footer {
-		background: #fafafa;
+		background: var(--color-bg);
 		border-top: 0;
 		color: #c0c0c0;
 		overflow: hidden;
@@ -2830,7 +2841,7 @@
 
 					#titleBar .toggle:before {
 						background: #ff5ab7;
-						color: #ffffff;
+						color: var(--color-fg);;
 						content: '\f0c9';
 						display: block;
 						font-size: 18px;
